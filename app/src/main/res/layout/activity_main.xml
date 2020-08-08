@@ -27,7 +27,7 @@
             android:layout_marginStart="61dp"
             android:layout_marginLeft="61dp"
             android:layout_marginTop="51dp"
-            android:background="#FF9100"
+            android:background="@color/colorAccent"
             android:text="@string/guess_prompt"
             android:textSize="30sp" />
 
@@ -42,11 +42,9 @@
             android:layout_marginLeft="21dp"
             android:layout_marginRight="20dp"
             android:layout_marginEnd="20dp"
-            android:layout_marginTop="147dp"
+            android:layout_marginTop="150dp"
             android:text="@string/guess_prompt_message"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:textSize="24sp"/>
 
         <EditText
             android:id="@+id/editId"
@@ -61,7 +59,8 @@
             android:ems="10"
             android:gravity="center"
             android:hint="@string/enter"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no" />
 
         <Button
             android:id="@+id/button"
